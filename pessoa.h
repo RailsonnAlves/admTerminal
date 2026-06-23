@@ -1,6 +1,6 @@
 #pragma once
 
-#include <iostream>
+#include <string>
 
 
 class Pessoa{
@@ -11,11 +11,12 @@ class Pessoa{
         std::string nomeusuario;
 
     public:
-        Pessoa(std::string nome, std::string cpf);
-        std::string Pessoa::getNome(){};
-        std::string Pessoa::getCpf(){};
+        Pessoa(std::string nome, std::string cpf, std::string nomeusuario);
 
-        void Pessoa::setNome(){};
-        void Pessoa::setCpf();
+        std::string getNome();
+        std::string getCpf();
+
+        void setNome(std::string);
+        void setCpf(std::string);
 
 };
